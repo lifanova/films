@@ -1,0 +1,619 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+ 
+  position: relative;
+  z-index: 0;
+}
+
+.banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.main-title-wrapper {
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* tooltip */
+.tooltip {
+  color: #000;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+/* trends */
+.trends {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.trends-container {
+  margin-top: 22px;
+}
+
+.trend-card {
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+.trend-card:nth-child(1) {
+  background-image: url(../img/trend1.jpg);
+}
+
+.trend-card:nth-child(2) {
+  background-image: url(../img/trend2.jpg);
+}
+
+.trend-card:nth-child(3) {
+  background-image: url(../img/trend3.jpg);
+}
+
+.trend-card:nth-child(4) {
+  background-image: url(../img/trend4.jpg);
+}
+
+.trend-card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.trend-card-content {
+  width: 100%; 
+  border: 3px solid #75673b;
+}
+
+.trend-tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.trend-tags > li {
+  margin-right: 18px;
+}
+
+.trend-tags > li > a {  
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b59f5b;
+}
+
+.trend-tags > li > a:hover {
+  text-decoration: underline;
+}
+
+.trend-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trend-title > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.trend-title > a:hover {
+  color: #b59f5b;
+}
+
+/********* footer ************/
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #f4f7f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 74px;
+}
+
+.social > li {
+  margin-right: 25px;
+}
+
+.social > li:last-child {
+  margin-right: 0;
+}
+
+.soc-link {  
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+a.soc-link > .soc-tooltip {
+  position: absolute;
+  top: -35px;
+  left: -15px;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+a.soc-link:hover > .soc-tooltip {
+  clip: auto;
+  width: auto;
+  height: auto;
+}
+
+.soc-twitter {
+  background-image: url(../svg/004-twitter.svg);
+  background-size: 20px 20px;
+}
+
+.soc-pinterest {
+  background-image: url(../svg/001-pinterest.svg);
+  background-size: 20px 20px;
+}
+
+.soc-facebook {
+  background-image: url(../svg/002-facebook.svg);
+  background-size: 20px 20px;
+}
+
+.soc-instagram {
+  background-image: url(../svg/005-instagram.svg);
+  background-size: 20px 20px;
+}
+
+.soc-tumblr {
+  background-image: url(../svg/003-tumblr.svg);
+  background-size: 20px 20px;
+}
+
+.footer-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer-text > a {
+  color: #999999;
+  font-size: 1.2rem;
+  margin-top: 70px;
+  text-decoration: none;
+}
+
+.footer-text > a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width:640px) {
+  .banner {
+    background-image: url(../img/banner-mobile.jpg);
+    /* Высота баннера = высоте экрана */
+    height: 100vh;
+  }
+
+  .wrapper {
+    height: inherit;
+   }
+
+  /* For mobile we have only logo & burger */
+  .header-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    height: 50%;          
+  }
+
+  .logo-wrapper {
+    text-align: center;
+    /* Отступ между логотипом и заголовком по макету = 46px*/
+    margin-bottom: 23px;
+  }
+
+  .logo-img {
+    width: 270px;    /*width: 75vw;*/
+  }
+
+  .nav {
+
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .burger-link {
+    display: block;
+    text-align: right;    
+  }
+
+  .main-title-wrapper {
+    padding-top: 23px;    
+  }
+
+  .main-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  /* trends */
+  .trend-card {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .trend-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .trend-card-content {
+    width: 100%;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    margin-top: auto;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  .trend-tags {
+    margin-bottom: 16px;
+  }
+
+  .trend-tags > li {
+    margin-right: 18px;
+  }
+
+  .trend-tags > li > a {
+    font-size: 14px;
+  }
+
+  .trend-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+  /* Mobile & landscape orientation */
+@media (max-width: 640px) and (orientation:landscape) {
+    
+  .trends-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trend-card {
+    width: calc(50% - 3px);
+  }
+
+  .trend-card:nth-child(n + 1) {
+    margin-bottom: 3px;
+  }
+
+  .trend-card:nth-child(odd) {
+    margin-right: 3px;
+  }
+}
+
+/* Tablet */
+@media (min-width:641px) and (max-width:1200px) {
+  .banner {
+    background-image: url(../img/banner-bg-tablet.jpg);
+    height: 388px;
+  }
+
+  .wrapper {
+    height: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
+   }
+
+  /* For tablet we have only logo & burger */
+  .header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    height: 44%;   
+  }
+
+  .logo-wrapper {
+    margin-top: 42px;
+  }
+
+  .logo-img {
+    width: 160px;    /*width: 50vw;*/
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .burger-link {
+    display: block;
+    text-align: right;
+    margin-top: 50px;
+  }
+
+  .burger-img {
+    width: 24px;
+    height: 20px;
+  }
+
+  .main-title-wrapper {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;        
+  }
+
+  .main-title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .trends-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trend-card {
+    width: calc(50% - 3px);
+  }
+
+  .trend-card:nth-child(n + 1) {
+    margin-bottom: 3px;
+  }
+
+  .trend-card:nth-child(odd) {
+    margin-right: 3px;
+  }
+
+  .trend-card-content {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: auto;
+    padding-top: 34px;
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-bottom: 34px;
+  }
+
+  .trend-tags {
+    margin-bottom: 14px;
+  }
+
+  .trend-tags > li {
+    margin-right: 18px;
+  }
+
+  .trend-tags > li > a {
+    font-size: 14px;
+  }
+
+  .trend-title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+/* Tablet & landscape orientation */
+@media (min-width:641px) and (max-width:1200px) and (orientation:landscape) {
+ 
+  
+}
+
+/* Desktop */
+@media (min-width:1201px) {
+  .banner {
+    background-image: url(../img/banner-bg.jpg);
+    height: 450px;
+  }
+
+   .wrapper {
+    /* 1660 - 2 * 230 */
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;    
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-top: 28px;   
+  }
+
+  .logo-wrapper {
+   /* margin-top: 42px;*/
+  }
+
+  .logo-img {
+    width: 179px;    /*width: 50vw;*/
+  }  
+
+  .menu-links {
+    display: block;
+  }
+
+  .menu-links {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  .menu-links > li {
+    margin-right: 32px;
+  }
+
+  .menu-links > li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-links > li > a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu-links > li > a:hover {
+    text-decoration: underline;
+  }
+
+  .burger-link {
+    display: none;
+  }
+
+  .main-title-wrapper {  
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 110px;    
+  }
+
+  .main-title {
+     font-size: 45px;
+     line-height: 75px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  /* trends */
+.trends {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.trends-container {
+  margin-top: 28px;
+}
+
+  .trends-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trend-card {
+    width: calc(25% - 3px);
+    margin-right: 3px;
+    height: 320px;
+  }
+
+  .trend-card:last-child {
+    margin-right: 0;
+  }
+
+  .trend-card-content {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: auto;
+    padding-top: 39px;
+    padding-left: 32px;
+    padding-right: 42px;
+    padding-bottom: 38px;
+  }
+
+  .trend-tags {
+    margin-bottom: 16px;
+  }
+
+  .trend-tags > li {
+    margin-right: 18px;
+  }
+
+  .trend-tags > li > a {
+    font-size: 14px;
+  }
+
+  .trend-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
