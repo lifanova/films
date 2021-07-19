@@ -151,14 +151,19 @@ body {
 
 
 .main {
-
+  min-height: 100vh;
+  display: flex;  
 }
 
 .main-container {
-
+  flex-grow: 1; 
 }
 
 /********* footer ************/
+.footer {    
+  padding-top: 30px;
+  padding-bottom: 30px;  
+}
 
 .footer-text {
   margin-bottom: 40px;
