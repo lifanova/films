@@ -34,8 +34,8 @@ body {
 
 .header-row {    
   margin-top: 30px; 
-  background-color: #000000;
-  color: #fff;
+  background-color: #fff;
+  color: #000000;
 
   padding-top: 2%; 
   padding-bottom: 2%; 
@@ -64,7 +64,7 @@ body {
 .menu-links > li > a {
   font-size: 13px;
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 
 .menu-links > li > a:hover {
@@ -149,6 +149,15 @@ body {
   color: #999999;
 }
 
+
+.main {
+
+}
+
+.main-container {
+
+}
+
 /********* footer ************/
 
 .footer-text {
@@ -196,7 +205,8 @@ body {
   }
 
   .logo-img {
-    width: 270px;    /*width: 75vw;*/
+    width: 270px;
+    height: 200px;
   }
 
   .nav {
@@ -301,7 +311,8 @@ body {
   }
 
   .logo-img {
-    width: 160px;    /*width: 50vw;*/
+    width: 160px;
+    height: 90px;
   }
 
   .menu-links {
@@ -399,11 +410,12 @@ body {
   }
 
   .logo-wrapper {
-   /* margin-top: 42px;*/
+   
   }
 
   .logo-img {
-    width: 179px;    /*width: 50vw;*/
+    width: 179px;
+    height: 100px;
   }  
 
   
